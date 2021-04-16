@@ -1,13 +1,5 @@
-import re
-import requests
 import telebot
 import config
-import time
-import hashlib
-from os import environ
-from flask import Flask
-from bs4 import BeautifulSoup as BS
-from collections import deque
 
 bot=telebot.TeleBot(config.token)
 @bot.message_handler(commands=['start'])
